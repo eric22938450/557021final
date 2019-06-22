@@ -12,6 +12,13 @@
 		4B1E48D222BE3A3200D90B10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1E48D022BE3A3200D90B10 /* Main.storyboard */; };
 		4B1E48D422BE3A3300D90B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B1E48D322BE3A3300D90B10 /* Assets.xcassets */; };
 		4B1E48D722BE3A3300D90B10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1E48D522BE3A3300D90B10 /* LaunchScreen.storyboard */; };
+		4B1E48DF22BE451300D90B10 /* NbaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E48DE22BE451300D90B10 /* NbaTableViewController.swift */; };
+		4B1E48E122BE48A100D90B10 /* nbaplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E48E022BE48A100D90B10 /* nbaplay.swift */; };
+		4B1E48E522BE5A2200D90B10 /* playerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E48E422BE5A2200D90B10 /* playerDetailViewController.swift */; };
+		4B1E48E922BE676800D90B10 /* nbaimageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E48E822BE676800D90B10 /* nbaimageCollectionViewController.swift */; };
+		4B1E48EB22BE689200D90B10 /* nbaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E48EA22BE689200D90B10 /* nbaCollectionViewCell.swift */; };
+		4B1E48ED22BE798F00D90B10 /* LoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E48EC22BE798F00D90B10 /* LoverTableViewController.swift */; };
+		4B1E48EF22BE79BB00D90B10 /* Lover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E48EE22BE79BB00D90B10 /* Lover.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		4B1E48D322BE3A3300D90B10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B1E48D622BE3A3300D90B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B1E48D822BE3A3300D90B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B1E48DE22BE451300D90B10 /* NbaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NbaTableViewController.swift; sourceTree = "<group>"; };
+		4B1E48E022BE48A100D90B10 /* nbaplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nbaplay.swift; sourceTree = "<group>"; };
+		4B1E48E422BE5A2200D90B10 /* playerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playerDetailViewController.swift; sourceTree = "<group>"; };
+		4B1E48E822BE676800D90B10 /* nbaimageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nbaimageCollectionViewController.swift; sourceTree = "<group>"; };
+		4B1E48EA22BE689200D90B10 /* nbaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nbaCollectionViewCell.swift; sourceTree = "<group>"; };
+		4B1E48EC22BE798F00D90B10 /* LoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoverTableViewController.swift; sourceTree = "<group>"; };
+		4B1E48EE22BE79BB00D90B10 /* Lover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lover.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +68,16 @@
 		4B1E48CB22BE3A3200D90B10 /* 557021 */ = {
 			isa = PBXGroup;
 			children = (
+				4B1E48EA22BE689200D90B10 /* nbaCollectionViewCell.swift */,
+				4B1E48E822BE676800D90B10 /* nbaimageCollectionViewController.swift */,
 				4B1E48CC22BE3A3200D90B10 /* AppDelegate.swift */,
 				4B1E48CE22BE3A3200D90B10 /* ViewController.swift */,
 				4B1E48D022BE3A3200D90B10 /* Main.storyboard */,
+				4B1E48EC22BE798F00D90B10 /* LoverTableViewController.swift */,
+				4B1E48EE22BE79BB00D90B10 /* Lover.swift */,
+				4B1E48DE22BE451300D90B10 /* NbaTableViewController.swift */,
+				4B1E48E422BE5A2200D90B10 /* playerDetailViewController.swift */,
+				4B1E48E022BE48A100D90B10 /* nbaplay.swift */,
 				4B1E48D322BE3A3300D90B10 /* Assets.xcassets */,
 				4B1E48D522BE3A3300D90B10 /* LaunchScreen.storyboard */,
 				4B1E48D822BE3A3300D90B10 /* Info.plist */,
@@ -135,8 +156,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B1E48ED22BE798F00D90B10 /* LoverTableViewController.swift in Sources */,
+				4B1E48E922BE676800D90B10 /* nbaimageCollectionViewController.swift in Sources */,
+				4B1E48EF22BE79BB00D90B10 /* Lover.swift in Sources */,
+				4B1E48E522BE5A2200D90B10 /* playerDetailViewController.swift in Sources */,
+				4B1E48DF22BE451300D90B10 /* NbaTableViewController.swift in Sources */,
+				4B1E48EB22BE689200D90B10 /* nbaCollectionViewCell.swift in Sources */,
 				4B1E48CF22BE3A3200D90B10 /* ViewController.swift in Sources */,
 				4B1E48CD22BE3A3200D90B10 /* AppDelegate.swift in Sources */,
+				4B1E48E122BE48A100D90B10 /* nbaplay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
