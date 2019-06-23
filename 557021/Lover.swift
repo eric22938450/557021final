@@ -9,10 +9,7 @@
 import Foundation
 
 struct Lover: Codable {
-    var name:String
-    var star: String
-    var innerBeauty: Bool
-    var weight: Double
+    var id:String
     var imageName: String
     
     static let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!

@@ -1,69 +1,47 @@
 //
-//  LoverTableViewController.swift
+//  EditLoverTableViewController.swift
 //  557021
 //
-//  Created by User15 on 2019/6/22.
+//  Created by User15 on 2019/6/23.
 //  Copyright © 2019 557021. All rights reserved.
 //
 
 import UIKit
 
-class LoverTableViewController: UITableViewController {
+class EditLoverTableViewController: UITableViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
+    var lover: Lover?
+    @IBOutlet weak var idTextField: UITextField!
+    @IBOutlet weak var photoButton: UIButton!
     
-    var lovers = [Lover]()
-    
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[.editedImage] as? UIImage
+        photoButton.setBackgroundImage(image, for: .normal)
         
-        lovers.remove(at: indexPath.row)
-        
-        Lover.saveToFile(lovers: lovers)
-        tableView.deleteRows(at: [indexPath], with: .automatic)
-    }
-    
-    @IBAction func unwindToLoverTableView(segue: UIStoryboardSegue) {
-        
-        if let controller = segue.source as? EditLoverTableViewController, let lover = controller.lover {
-            lovers.insert(lover, at: 0)
-            
-            Lover.saveToFile(lovers: lovers)
-            
-            let indexPath = IndexPath(row: 0, section: 0)
-            tableView.insertRows(at: [indexPath], with: .automatic)
-        }
+        dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let lovers = Lover.readLoversFromFile() {
-            self.lovers = lovers
-        }
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return lovers.count
-    }
-
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "loverCell", for: indexPath) as! LoverTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        let lover = lovers[indexPath.row]
-        cell.nameLabel.text = lover.id
-        let url = Lover.documentsDirectory.appendingPathComponent(lover.imageName).appendingPathExtension("jpg")
-        cell.photoImageView.image = UIImage(contentsOfFile: url.path)
+        // Configure the cell...
 
         return cell
     }
-    
-
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -110,4 +88,23 @@ class LoverTableViewController: UITableViewController {
     }
     */
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let id = idTextField.text ?? ""
+        let imageName = UUID().uuidString
+        let imageData = photoButton.backgroundImage(for: .normal)?.jpegData(compressionQuality: 0.8)
+        let url = Lover.documentsDirectory.appendingPathComponent(imageName).appendingPathExtension("jpg")
+        try? imageData?.write(to: url)
+        
+        lover = Lover(id: id, imageName: imageName)
+    }
+    @IBAction func selectPhoto(_ sender: Any) {
+        
+        let controller = UIImagePickerController()
+        controller.sourceType = .photoLibrary
+        controller.allowsEditing = true
+        controller.delegate = self
+        present(controller, animated: true, completion: nil)
+    }
+    
 }

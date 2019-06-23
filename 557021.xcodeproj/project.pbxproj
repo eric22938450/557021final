@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B1615EB22BF84B2005F3F5F /* EditLoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1615EA22BF84B2005F3F5F /* EditLoverTableViewController.swift */; };
+		4B1615ED22BF8AD9005F3F5F /* LoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1615EC22BF8AD9005F3F5F /* LoverTableViewCell.swift */; };
 		4B1E48CD22BE3A3200D90B10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E48CC22BE3A3200D90B10 /* AppDelegate.swift */; };
 		4B1E48CF22BE3A3200D90B10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E48CE22BE3A3200D90B10 /* ViewController.swift */; };
 		4B1E48D222BE3A3200D90B10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1E48D022BE3A3200D90B10 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B1615EA22BF84B2005F3F5F /* EditLoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLoverTableViewController.swift; sourceTree = "<group>"; };
+		4B1615EC22BF8AD9005F3F5F /* LoverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoverTableViewCell.swift; sourceTree = "<group>"; };
 		4B1E48C922BE3A3200D90B10 /* 557021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 557021.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1E48CC22BE3A3200D90B10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B1E48CE22BE3A3200D90B10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,7 +77,9 @@
 				4B1E48CC22BE3A3200D90B10 /* AppDelegate.swift */,
 				4B1E48CE22BE3A3200D90B10 /* ViewController.swift */,
 				4B1E48D022BE3A3200D90B10 /* Main.storyboard */,
+				4B1615EA22BF84B2005F3F5F /* EditLoverTableViewController.swift */,
 				4B1E48EC22BE798F00D90B10 /* LoverTableViewController.swift */,
+				4B1615EC22BF8AD9005F3F5F /* LoverTableViewCell.swift */,
 				4B1E48EE22BE79BB00D90B10 /* Lover.swift */,
 				4B1E48DE22BE451300D90B10 /* NbaTableViewController.swift */,
 				4B1E48E422BE5A2200D90B10 /* playerDetailViewController.swift */,
@@ -161,7 +167,9 @@
 				4B1E48EF22BE79BB00D90B10 /* Lover.swift in Sources */,
 				4B1E48E522BE5A2200D90B10 /* playerDetailViewController.swift in Sources */,
 				4B1E48DF22BE451300D90B10 /* NbaTableViewController.swift in Sources */,
+				4B1615ED22BF8AD9005F3F5F /* LoverTableViewCell.swift in Sources */,
 				4B1E48EB22BE689200D90B10 /* nbaCollectionViewCell.swift in Sources */,
+				4B1615EB22BF84B2005F3F5F /* EditLoverTableViewController.swift in Sources */,
 				4B1E48CF22BE3A3200D90B10 /* ViewController.swift in Sources */,
 				4B1E48CD22BE3A3200D90B10 /* AppDelegate.swift in Sources */,
 				4B1E48E122BE48A100D90B10 /* nbaplay.swift in Sources */,
