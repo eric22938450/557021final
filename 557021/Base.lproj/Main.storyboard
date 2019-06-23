@@ -42,6 +42,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.0078431372550000003" green="0.89950770547945202" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="kk4-Gy-skJ" kind="show" id="AhJ-ZW-KVG"/>
                                 </connections>
@@ -66,8 +67,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spur1" translatesAutoresizingMaskIntoConstraints="NO" id="qox-5N-5m6">
+                                <rect key="frame" x="87" y="491" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LZO-gK-1jc" userLabel="playerinfo">
-                                <rect key="frame" x="87" y="177" width="240" height="128"/>
+                                <rect key="frame" x="87" y="135" width="240" height="348"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -85,11 +90,11 @@
             </objects>
             <point key="canvasLocation" x="5453.6231884057979" y="-606.02678571428567"/>
         </scene>
-        <!--Item-->
+        <!--球員列表-->
         <scene sceneID="RqJ-PA-047">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9y9-iU-rLk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="FXw-Mr-xgd"/>
+                    <tabBarItem key="tabBarItem" title="球員列表" id="FXw-Mr-xgd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mbj-fc-fkc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -111,7 +116,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="y2B-UZ-itW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.0187217119" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mIP-ZV-uzh">
                             <size key="itemSize" width="50" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -173,11 +178,11 @@
             </objects>
             <point key="canvasLocation" x="2830.434782608696" y="-579.24107142857144"/>
         </scene>
-        <!--Item-->
+        <!--圖集-->
         <scene sceneID="zHW-Gr-5BO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e4O-je-aPI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="L8O-tv-UeG"/>
+                    <tabBarItem key="tabBarItem" title="圖集" id="L8O-tv-UeG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g3F-cG-9cO">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -323,11 +328,13 @@
             </objects>
             <point key="canvasLocation" x="5490" y="816"/>
         </scene>
-        <!--Item-->
+        <!--我的最愛-->
         <scene sceneID="JDE-Ip-YG4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YeG-kx-5ih" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="B7J-6n-fob"/>
+                    <tabBarItem key="tabBarItem" title="我的最愛" id="B7J-6n-fob">
+                        <color key="badgeColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ecv-FL-BmC">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -344,6 +351,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pic0" width="197" height="255"/>
+        <image name="pic0" width="259" height="194"/>
+        <image name="spur1" width="233" height="196"/>
     </resources>
 </document>
